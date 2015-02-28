@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Test Script Page</title>
+</head>
+<body>
+	<form method="GET"><input type="text" name="data" value="hello" /><input type="submit" value="Get" /></form>
+	<form method="POST"><input type="text" name="data" value="hello" /><input type="submit" value="Post" /></form>
+	<div>Chip: <?lua print(node.chipid()) ?></div>
+	<div>HEAP: <?lua print(node.heap()) ?></div>
+	<div>GPIO8: <?lua print(gpio.read(8)) ?></div>
+	<div>GPIO9: <?lua print(gpio.read(9)) ?></div>
+	<div>ADC0: <?lua print(adc.read(0)) ?></div>
+	<div>Invalid: <?lua print(adc.read(0))) ?></div>
+	<div>GPIO 0 is: <?lua if (gpio.read(0) == 1) then print("high"); else print("low"); end ?></div>
+	<a href="index.html">Html Page</a>
+	<a href="log.txt">log file</a>
+</body>
+</html>

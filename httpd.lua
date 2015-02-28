@@ -59,7 +59,6 @@ function sendFile(conn, filename, params)
 			if line then
 				if line:find("<%?lua(.+)%?>") then
 					-- single line lua code
-                         print( "single line " .. getCode(line, "<%?lua(.+)%?>"))
 					luaCode = paramCode .. " " .. getCode(line, "<%?lua(.+)%?>")
 					executeCode(conn, luaCode)
 					startTag = false

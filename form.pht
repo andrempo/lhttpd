@@ -20,8 +20,10 @@
        <li class="list-group-item">Command: 
        <?lua 
           print(get['command']) 
-       ?></li>
-       <li class="list-group-item">Led: <?lua print(get['command']) ?>
+       ?>
+       </li>
+       <li class="list-group-item">Led: 
+       <?lua print(get['command']) ?>
        </li>
        
        </li>
